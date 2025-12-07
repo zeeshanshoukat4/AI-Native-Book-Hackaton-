@@ -95,6 +95,16 @@
 - **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
 - **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
 
+### Non-Functional Requirements (from Constitution)
+
+- **NFR-PERF-001**: All new features MUST NOT degrade the First Contentful Paint (FCP) time, maintaining the <1.5s target.
+- **NFR-PERF-002**: Any added dependencies MUST be accounted for in the <150KB bundle size budget.
+- **NFR-A11Y-001**: All UI components and user interactions MUST be 100% accessible (ARIA compliant, keyboard navigable).
+- **NFR-DESIGN-001**: UI MUST adhere to the mobile-first, glassmorphism, and gradient design language.
+- **NFR-TECH-001**: All code MUST be TypeScript in strict mode.
+- **NFR-TECH-002**: New components MUST be reusable and placed in the appropriate shared directory.
+- **NFR-CONTENT-001**: If the feature involves book content, it MUST use the MDX file structure in `/content/chapters/`.
+
 ### Key Entities *(include if feature involves data)*
 
 - **[Entity 1]**: [What it represents, key attributes without implementation]

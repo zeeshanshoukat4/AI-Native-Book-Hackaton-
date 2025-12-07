@@ -159,6 +159,19 @@ Examples of foundational tasks (adjust based on your project):
 
 ---
 
+## Phase N+1: Constitutional Compliance Audit
+
+**Purpose**: Final check to ensure all work complies with the project constitution.
+
+- [ ] TXXX **Audit-Performance**: Verify FCP is < 1.5s and bundle size is < 150KB.
+- [ ] TXXX **Audit-Accessibility**: Perform a full accessibility audit (ARIA, keyboard navigation, screen reader).
+- [ ] TXXX **Audit-Design**: Confirm all UI elements align with the mobile-first, glassmorphism, and gradient design system.
+- [ ] TXXX **Audit-Code**: Ensure all code is TypeScript strict mode and all new components are reusable.
+- [ ] TXXX **Audit-Content**: Check that all book content is correctly implemented using MDX in the `/content/chapters/` directory.
+- [ ] TXXX **Audit-Deployment**: Confirm deployment configuration targets Vercel.
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies

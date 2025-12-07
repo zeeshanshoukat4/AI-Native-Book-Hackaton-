@@ -1,0 +1,94 @@
+# Feature Specification: Docusaurus Book Website
+
+**Feature Branch**: `002-docusaurus-book-site`
+**Created**: 2025-12-07
+**Status**: Draft
+**Input**: User description: "Use Docusaurus to implement and create a professional book website with good appearance."
+
+## User Scenarios & Testing *(mandatory)*
+
+### User Story 1 - View Landing Page (Priority: P1)
+
+As a visitor, I want to see a professional and visually appealing landing page that clearly introduces the book and provides a prominent call-to-action to start reading.
+
+**Why this priority**: The landing page is the primary entry point and must capture the user's interest immediately.
+
+**Independent Test**: The landing page can be tested by running the dev server and ensuring all elements render correctly and the design is polished.
+
+**Acceptance Scenarios**:
+
+1. **Given** a user navigates to the root URL, **When** the page loads, **Then** a hero section with the book title and a brief introduction is displayed.
+2. **Given** the landing page is loaded, **When** the user views the page, **Then** a clear CTA button (e.g., "Start Reading") is visible and links to the first chapter of the book.
+
+---
+
+### User Story 2 - Navigate and Read the Book (Priority: P1)
+
+As a reader, I want to navigate through the book's 5 chapters and 10 topics using a persistent sidebar, read the content in a clean, readable layout, and use built-in pagination to move between topics.
+
+**Why this priority**: The core function of the site is the reading experience. Easy navigation is essential for a good user experience.
+
+**Independent Test**: The book's doc pages can be tested by adding markdown files and verifying that Docusaurus generates the sidebar and content pages correctly.
+
+**Acceptance Scenarios**:
+
+1. **Given** a user is viewing a book page, **When** they look at the sidebar, **Then** a hierarchical list of all 5 chapters and their respective topics is visible.
+2. **Given** a user clicks on a chapter or topic in the sidebar, **When** the new page loads, **Then** the corresponding content is displayed in the main content area.
+3. **Given** a user is at the end of a topic, **When** they click the "Next" button, **Then** they are taken to the next topic in the sequence.
+
+---
+
+### User Story 3 - Customize Viewing Experience (Priority: P2)
+
+As a reader, I want to be able to switch between light and dark modes to suit my reading preference.
+
+**Why this priority**: Enhances user comfort and accessibility, which contributes to a premium feel.
+
+**Independent Test**: The theme toggle can be tested by clicking the theme switch button and verifying that the color scheme of the entire site updates correctly.
+
+**Acceptance Scenarios**:
+
+1. **Given** a user is on any page, **When** they click the theme toggle button, **Then** the site's color scheme instantly switches between light and dark modes.
+
+### Edge Cases
+
+- What happens if a link to a non-existent chapter/topic is clicked?
+- How does the site render on mobile devices, and is the navigation still intuitive?
+- How are images and other media handled within the MDX content?
+
+## Requirements *(mandatory)*
+
+### Functional Requirements
+
+- **FR-001**: The project MUST be initialized using the standard `docusaurus-init` command with the `classic` template.
+- **FR-002**: The default landing page MUST be replaced with a custom React component at `src/pages/index.js` to serve as the book's main introduction.
+- **FR-003**: All book content MUST be created as MDX files within the `/docs` directory.
+- **FR-004**: The book's structure (5 chapters, 2 topics each) MUST be defined in the `sidebars.js` configuration file to generate the navigation.
+- **FR-005**: The site's theme MUST be customized via `docusaurus.config.js` and `src/css/custom.css` to achieve a unique and professional visual appearance.
+- **FR-006**: The built-in dark/light mode theme toggle MUST be enabled and functional.
+
+### Non-Functional Requirements (from Constitution)
+
+- **NFR-PERF-001**: All new features MUST NOT degrade the First Contentful Paint (FCP) time, maintaining the <1.5s target.
+- **NFR-PERF-002**: Any added dependencies MUST be accounted for in the <150KB bundle size budget.
+- **NFR-A11Y-001**: All UI components and user interactions MUST be 100% accessible (ARIA compliant, keyboard navigable).
+- **NFR-DESIGN-001**: UI MUST adhere to the mobile-first, glassmorphism, and gradient design language.
+- **NFR-TECH-001**: All code MUST be TypeScript in strict mode.
+- **NFR-TECH-002**: New components MUST be reusable and placed in the appropriate shared directory.
+- **NFR-CONTENT-001**: If the feature involves book content, it MUST use the MDX file structure in `/docs/`.
+
+### Key Entities *(include if feature involves data)*
+
+- **Doc**: A single markdown (MDX) file representing a book topic.
+- **Category**: A collection of docs, configured in `sidebars.js` to represent a chapter.
+- **Sidebar**: The primary navigation element for the book, generated by Docusaurus based on the `sidebars.js` configuration.
+
+## Success Criteria *(mandatory)*
+
+### Measurable Outcomes
+
+- **SC-001**: The website is successfully built using Docusaurus and deployed to a public Vercel URL.
+- **SC-002**: The sidebar navigation accurately reflects a structure of 5 chapters, each containing 2 topics.
+- **SC-003**: The final website design is rated as "premium and professional" by at least 3 representative users, and is visually distinct from the default Docusaurus theme.
+- **SC-004**: The deployed site achieves a score of 90+ in Google Lighthouse for Performance, Accessibility, and SEO categories.
+- **SC-005**: All 10 topics of the book are managed as individual MDX files within the `docs` directory.

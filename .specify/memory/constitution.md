@@ -1,55 +1,61 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: 0.0.0 → 1.0.0
+- Modified principles: All principles are new.
+- Added sections: Core Principles, Standards, Constraints, Governance
+- Removed sections: None
+- Templates requiring updates: ⚠ pending .specify/templates/plan-template.md, ⚠ pending .specify/templates/spec-template.md, ⚠ pending .specify/templates/tasks-template.md
+- Follow-up TODOs: None
+-->
+# AI-Native Driven Development Physical AI and Humaoid Robotics – Premium Book Website (Next.js 15 + Tailwind + MDX) Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Minimalist UI Library Stack
+Zero external UI libraries except shadcn/ui & Tailwind. This ensures a lightweight, consistent, and highly customizable frontend architecture.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Mobile-First & Modern Aesthetics
+All design MUST follow a mobile-first approach, featuring a glassmorphism and gradient-based visual design. This guarantees a responsive and contemporary user experience across all devices.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Content as Data via MDX
+All book content MUST be managed in MDX files. This approach decouples content from presentation, simplifying updates, and enabling programmatic content manipulation.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Dual-Mode Theme
+A dark/light mode toggle is a mandatory feature. The theme implementation must be robust and provide a seamless user-selectable viewing experience.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. High-Performance Standard
+The application MUST achieve a First Contentful Paint (FCP) of less than 1.5 seconds. Performance is a critical, non-negotiable feature.
 
-### [PRINCIPLE_6_NAME]
+### VI. Universal Accessibility
+The application MUST be 100% accessible. This includes full compliance with ARIA standards and complete keyboard navigability to ensure usability for all individuals.
 
+## Standards
 
-[PRINCIPLE__DESCRIPTION]
+### TypeScript Strict Mode
+All code must be written in TypeScript's strict mode to enforce type safety and improve code quality.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### Component Reusability
+All UI components are to be designed for reusability, with clear props and separation of concerns.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### Content Organization
+Book chapter content MUST be located in the `/content/chapters/` directory.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### Bundle Size Budget
+The total production bundle size, excluding images, MUST NOT exceed 150KB.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Constraints
+
+### Page Architecture
+The website will consist of exactly four pages: Home, Book, About, and Contact.
+
+### Content Structure
+The book content is fixed to 5 chapters, with each chapter containing 2 topics.
+
+### Deployment Platform
+The project MUST be deployed on the Vercel platform, utilizing its free tier.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Compliance with this constitution is mandatory for all development. All code reviews must validate adherence to these principles and standards. Any proposed deviation requires a formal amendment to this document.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-07 | **Last Amended**: 2025-12-07

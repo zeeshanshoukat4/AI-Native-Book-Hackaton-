@@ -12,26 +12,32 @@
 ## Technical Context
 
 <!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
+  This section is pre-filled based on the project constitution.
+  Verify these details and fill in any remaining clarifications.
 -->
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: TypeScript (strict mode)
+**Primary Dependencies**: Next.js 15, Tailwind CSS, shadcn/ui, MDX
+**Storage**: N/A (Content sourced from MDX files)
+**Testing**: [NEEDS CLARIFICATION: e.g., Jest, Playwright]
+**Target Platform**: Vercel
+**Project Type**: Web Application
+**Performance Goals**: <1.5s First Contentful Paint (FCP)
+**Constraints**: <150KB total bundle size (excluding images)
+**Scale/Scope**: 4 pages, 5 chapters (2 topics each)
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **UI Libraries**: Is the plan limited to only `shadcn/ui` and `Tailwind CSS`?
+- [ ] **Design**: Does the design adhere to mobile-first principles, with glassmorphism and gradient aesthetics?
+- [ ] **Content**: Is all book content managed via MDX files in `/content/chapters/`?
+- [ ] **Theme**: Does the plan include a dark/light mode toggle?
+- [ ] **Performance**: Is there a clear strategy to achieve <1.5s FCP and a <150KB bundle size?
+- [ ] **Accessibility**: Does the plan ensure 100% accessibility (ARIA, keyboard navigation)?
+- [ ] **Tech Stack**: Does the plan use Next.js 15 and TypeScript strict mode?
+- [ ] **Deployment**: Is the deployment target Vercel?
 
 ## Project Structure
 
