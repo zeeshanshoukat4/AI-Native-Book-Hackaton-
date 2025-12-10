@@ -29,6 +29,8 @@ function HomepageHeader() {
   );
 }
 
+import ChatbotButton from '@site/src/components/ChatbotButton';
+
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -39,6 +41,7 @@ export default function Home(): ReactNode {
       <main>
         <HomepageFeatures />
       </main>
+      <ChatbotButton />
     </Layout>
   );
 }
