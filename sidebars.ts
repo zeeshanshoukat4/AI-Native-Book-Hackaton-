@@ -17,7 +17,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Chapter 1: The Genesis',
-      items: ['chapter-1/chapter-1-topic-1', 'chapter-1/chapter-1-topic-2'],
+      items: ['chapter-1-topic-1', 'chapter-1-topic-2'],
     },
     {
       type: 'category',

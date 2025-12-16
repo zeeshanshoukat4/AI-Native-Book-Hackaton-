@@ -1,47 +1,18 @@
 ---
-sidebar_position: 1
+id: chapter-1-topic-1
+title: "Chapter 1 - Topic 1: The Genesis of AI-Native"
+sidebar_label: The Genesis of AI-Native
 ---
 
-# Tutorial Intro
+# Chapter 1 - Topic 1: The Genesis of AI-Native
 
-Let's discover **Docusaurus in less than 5 minutes**.
+# Chapter 1 - Topic 1: The Genesis of AI-Native
 
-## Getting Started
+The term "AI-Native" represents a fundamental paradigm shift in how we approach software development and system design. It's not merely about integrating Artificial Intelligence (AI) into existing applications; it's about building systems from the ground up with AI as a core component, a first-class citizen in the architectural landscape.
 
-Get started by **creating a new site**.
+This chapter explores the genesis of this concept, tracing its roots from the early days of AI to the current explosion of Large Language Models (LLMs) and generative technologies. We will delve into the key drivers behind this evolution, including the exponential growth of data, the increasing availability of powerful computing resources, and the development of sophisticated machine learning algorithms.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+We will also differentiate AI-Native from traditional software development methodologies, highlighting the key differences in mindset, architecture, and development practices. This will lay the foundation for understanding the unique challenges and opportunities that AI-Native presents.
 
-### What you'll need
+By the end of this topic, you will have a clear understanding of what it means to be AI-Native and why it is poised to become the dominant paradigm for software development in the 21st century.
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
