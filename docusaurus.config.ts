@@ -88,7 +88,7 @@ const config: Config = {
           items: [
             {
               label: 'Start Reading',
-              to: '/docs/chapter-1-topic-1', // Will be updated to first chapter
+              to: '/docs/chapter-1/chapter-1-topic-1', // Will be updated to first chapter
             },
           ],
         },
